@@ -16,7 +16,7 @@ A new Flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'QY_iOS_SDK', '~> 8.12.0'
+  s.dependency 'QY_iOS_SDK', '~> 9.1.0'
   s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
