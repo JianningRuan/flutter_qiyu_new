@@ -1,4 +1,6 @@
 #import <UIKit/UIKit.h>
+#import <NIMSDK/NIMSDK.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 #import <QYSDK/QYSDK.h>
 #import "FlutterQiyuPlugin.h"
 #import "UIBarButtonItem+blocks.h"

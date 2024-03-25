@@ -1,6 +1,19 @@
 PODS:
+  - BaiduMapKit (6.6.1):
+    - BaiduMapKit/Base (= 6.6.1)
+    - BaiduMapKit/Map (= 6.6.1)
+    - BaiduMapKit/Search (= 6.6.1)
+    - BaiduMapKit/Utils (= 6.6.1)
+  - BaiduMapKit/Base (6.6.1)
+  - BaiduMapKit/Map (6.6.1):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Search (6.6.1):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Utils (6.6.1):
+    - BaiduMapKit/Base
   - Flutter (1.0.0)
   - flutter_qiyu (0.0.1):
+    - BaiduMapKit (~> 6.6.1)
     - Flutter
     - QY_iOS_SDK (~> 9.1.0)
   - NIMSDK_LITE (8.9.110)
@@ -15,6 +28,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BaiduMapKit
     - NIMSDK_LITE
     - QY_iOS_SDK
 
@@ -25,8 +39,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_qiyu/ios"
 
 SPEC CHECKSUMS:
+  BaiduMapKit: 78931f60b0bc6959214f36aec76aef6cf86c5400
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_qiyu: b4cfa6fefa381f251202976f4e18fa9c246107e5
+  flutter_qiyu: 732902f2ae435490762624f03a2ef2a02cfb5a07
   NIMSDK_LITE: 299ff39677d705b91413d14ad352b32a1b0e72fe
   QY_iOS_SDK: bcaafd0ff38a777b3727bfe02482a63378db6908
 
