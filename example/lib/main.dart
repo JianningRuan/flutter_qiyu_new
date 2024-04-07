@@ -6,8 +6,8 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   QiYu.registerApp(
-    appKey: '08de58af54aa980646f3f5f4be104759',
-    appName: 'QuanCheng',
+    appKey: '<appkey>',
+    appName: '<appname>',
   );
 
   runApp(const MyApp());
@@ -34,14 +34,12 @@ class _MyAppState extends State<MyApp> {
               MaterialButton(
                 child: Text('联系客服'),
                 onPressed: () {
-                  print('111111');
                   QYUserInfoParams userInfoParams = QYUserInfoParams.fromJson({
                     'userId': 'uid10101010',
                     'data':
                         '[{\"key\":\"real_name\", \"value\":\"土豪\"},{\"key\":\"mobile_phone\", \"hidden\":true},{\"key\":\"email\", \"value\":\"13800000000@163.com\"},{\"index\":0, \"key\":\"account\", \"label\":\"账号\", \"value\":\"zhangsan\", \"href\":\"http://example.domain/user/zhangsan\"},{\"index\":1, \"key\":\"sex\", \"label\":\"性别\", \"value\":\"先生\"},{\"index\":5, \"key\":\"reg_date\", \"label\":\"注册日期\", \"value\":\"2015-11-16\"},{\"index\":6, \"key\":\"last_login\", \"label\":\"上次登录时间\", \"value\":\"2015-12-22 15:38:54\"}]'
                   });
                   QiYu.setUserInfo(userInfoParams);
-                  print('3333333333333');
                   QYServiceWindowParams serviceWindowParams =
                       QYServiceWindowParams.fromJson({
                     'source': {
@@ -68,9 +66,7 @@ class _MyAppState extends State<MyApp> {
                     'showQuitQueue': true,
                     'showCloseSessionEntry': true
                   });
-                  print('44444444');
                   QiYu.openServiceWindow(serviceWindowParams);
-                  print('555555');
                 },
               )
             ],

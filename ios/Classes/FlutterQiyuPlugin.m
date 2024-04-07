@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
 #import <NIMSDK/NIMSDK.h>
-#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 #import <QYSDK/QYSDK.h>
 #import "FlutterQiyuPlugin.h"
 #import "UIBarButtonItem+blocks.h"
@@ -10,6 +9,8 @@
 
 @implementation FlutterQiyuPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
+    [NIMSDK sharedSDK].serverSetting.nosUploadAddress = @"https://nosup-hz1.127.net";
+    [NIMSDK sharedSDK].serverSetting.nosUploadHost = @"nosup-hz1.127.net";
     FlutterMethodChannel* channel = [FlutterMethodChannel
                                      methodChannelWithName:@"flutter_qiyu"
                                      binaryMessenger:[registrar messenger]];

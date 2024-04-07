@@ -1,7 +1,7 @@
-name: flutter_qiyu
+name: flutter_qiyu_new
 description: 适用于 Flutter 的七鱼客服插件
-version: 0.1.1
-homepage: https://github.com/leanflutter/flutter_qiyu
+version: 0.0.1
+homepage: https://github.com/JianningRuan/flutter_qiyu_new
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
